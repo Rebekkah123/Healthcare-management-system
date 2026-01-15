@@ -1,0 +1,68 @@
+body{
+            font-family: Arial, Helvetica, sans-serif;        
+}
+header{
+    background-color: white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#middle{
+            background: url("bg.png");
+            background-size: auto;
+            padding: 20px 30px 20px 40px;
+            display: flex;
+}
+
+
+
+
+
+a{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+.bluebullet{
+  border-radius: 50px; 
+  border: 2px solid #567aee;
+  padding: 14px 14px; 
+  width: 170px;
+  height: 16px; 
+  color:#567aee; 
+  font: 15px; 
+  background-color: #d6dcef;
+
+}
+.buttons button{
+          padding: 12px 20px;
+          border: 2px solid #e7e7e7;;
+          /* border-color: rgb(219, 216, 216); */
+          border-radius: 12px;
+          font-weight: bold;
+}
+.ficons{
+    margin-left: 10px; color: #bfbfbf;
+}
+.foot{
+    display: flex;gap: 80px; align-items: center;
+  justify-content: center; padding-top: auto; padding-bottom: auto; padding-right: 0px;
+}
+/* icon header */
+
+
+ul{
+  list-style-type: none;  
+  padding: 5px; 
+  display: flex;
+  float: right;
+  margin-top: 5px;
+  margin-right: 55px;
+}
+
