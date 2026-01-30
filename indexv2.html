@@ -5,138 +5,118 @@
     <title>Medicore Systems</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
 </head>
 <body>
-<header>
+    <header>
     <div class="top">
-        <i class="fa-regular fa-square-plus" style="margin-left: 50px; margin-right:5px; border: 2px hidden rgb(231, 219, 244); border-radius: 4px; background-color: rgb(222, 225, 241); padding: 9px 3px;">  </i>
+        <i class="fa-regular fa-square-plus" style="margin-left: 50px; margin-right:5px; border: 2px hidden rgb(231, 219, 244); border-radius: 4px; background-color: rgb(222, 225, 241); padding: 9px 3px; ">  </i>
         <b style="font-size:200%; margin-top:auto;">  Medicore Systems</b>
+
     </div>
         
-    <ul>
+        <ul>
         <li><a href="#features">Features</a></li>
         <li><a href="#solutions">Solutions</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#support">Support</a></li>
-        <li><a href="#login" style="background-color: lightgrey; border-radius: 10px;"><b>Log In</b></a></li>
+        <li><a href="login.html" style="background-color: lightgrey; border-radius: 10px;"><b>Log In</b></a></li>
         <li><a href="#requestdemo" style="background-color: rgb(66, 98, 225); border-radius: 10px; color: white;">Request Demo</a></li>
-    </ul>
-</header>
+        </ul>
 
-<div id="middle">
+    <!-- </div> -->
+    </header>
+
+  <div id="middle">
+    <!-- left-part -->
     <div style="width:50%;"> 
-        <div class="bluebullet"> <b>⦿ v2.4 Now Available</b></div>
-        <h1 style="font-size:250%; margin-bottom: 0px;">Streamline Patient<br>Care with <br>Intelligent <br>Management</h1><br>
-        <p style="margin-top: 0px; color: rgb(83, 81, 81); font-size:125%;">The all-in-one platform for scheduling, electronic health<br>
+    <div class="bluebullet"> <b>⦿ v2.4 Now Available</b></div>
+  <h1 style="font-size:250%; margin-bottom: 0px;">Streamline Patient<br>Care with <br>Intelligent <br>Management</h1><br>
+  <p style="margin-top: 0px; color: rgb(83, 81, 81); font-size:125%;">The all-in-one platform for scheduling, electronic health<br>
 records, and resource allocation. Built for modern<br>
 healthcare providers who value efficiency.</p>
-        <div class="buttons">
-            <button style="background-color: rgb(66, 98, 225); color: white;">Start Free Trial</button>
-            <button style="background-color: white;">View Features</button>
-        </div>
-        <div style="padding-top: 14px; color: rgb(83, 81, 81); font-size: small;">
-            <i class="fa-regular fa-circle-check" style="color: #20e741;"></i> HIPAA Compliant
-            <i class="fa-regular fa-circle-check" style="color: #20e741;padding-left: 5px;"></i> No Credit Card
-        </div>
-    </div>
+  <div class="buttons">
 
-    <div style="width:40%;">
-        <br><br>
-        <img src="h5.jpg" style="border-radius: 8px; max-width: 100%; width: 90%;
-        height: auto;">
-        <div style="font-size: 12px; background-color: white; border-radius: 8px; height: auto; width: 75%;position: relative; top: -100px; left: 20px; padding: 5px;">
-            <b>Emergency Room Capacity   </b>
-            <b style="border-radius: 6px; font-size: 12px; border-style: hidden; background-color: #20e741; color:darkgreen; height: 5px; width: 45px; padding: 2px;">Optimal</b><br>
+    <button id="btn1"style="background-color: rgb(66, 98, 225); color: white;">Start Free Trial</button>
+    <button id="btn2"style="background-color: white;">View Features</button>
+  </div>
+  <div style="padding-top: 14px; color: rgb(83, 81, 81); font-size: small;">
+    <i class="fa-regular fa-circle-check" style="color: #20e741;"></i> HIPAA Compliant
+    <i class="fa-regular fa-circle-check" style="color: #20e741;padding-left: 5px;"></i> No Credit Card
+  </div>
+  </div>
+  <!-- right image -->
+   <div style="width:40%;">
+    <br><br>
+    <img src="h5.jpg" style="border-radius: 8px; max-width: 100%; width: 90%;
+  height: auto;">
+  <div style="font-size: 12px; background-color: white; border-radius: 8px; height: auto; width: 75%;position: relative; top: -100px; left: 20px; padding: 5px;">
+    <b>Emergency Room Capacity   </b>
+    <b style="border-radius: 6px; font-size: 12px; border-style: hidden; background-color: #20e741; color:darkgreen; height: 5px; width: 45px; padding: 2px;">Optimal</b><br>
 
-            <progress id="prg" value="80" max="100"  style="width: 90%;"></progress><br>
-            <span style="font-size: x-small; color: rgb(83, 81, 81);">24 beds available: Updated 2 mins ago</span>
-        </div>
-    </div>
-</div>
+     <progress id="prg" value="80" max="100"  style="width: 90%;"></progress><br>
+     <span id="bedsText"style="font-size: x-small; color: rgb(83, 81, 81);">24 beds available: Updated 2 mins ago</span>
+  </div>
+ 
+   </div>
 
-<section style="padding: 40px 60px; background-color: #f5f7fb;">
-    <h2 style="margin-bottom: 15px;">Patient Registration</h2>
 
-    <div style="max-width: 450px;">
-        <input type="text" id="pName" placeholder="Patient Name" style="width:100%; padding:10px; margin-bottom:10px;">
-        <input type="number" id="pAge" placeholder="Age" style="width:100%; padding:10px; margin-bottom:10px;">
-        <select id="pDept" style="width:100%; padding:10px; margin-bottom:10px;">
-            <option value="">Select Department</option>
-            <option>General Medicine</option>
-            <option>Cardiology</option>
-            <option>Neurology</option>
-            <option>Orthopedics</option>
-        </select>
-        <button onclick="registerPatient()" style="padding:10px 16px; background-color:#4262e1; color:white; border:none; border-radius:6px;">Register Patient</button>
-    </div>
-
-    <h3 style="margin-top: 25px;">Registered Patients</h3>
-    <div id="patientList" style="margin-top:10px;"></div>
-</section>
-
-<footer style="padding: 20px 0px 20px 0px;">
+  </div>
+  
+  <footer style="padding: 20px 0px 20px 0px;">
     <p style="text-align: center; font-weight: bold; color: rgba(69, 69, 69, 0.986)">TRUSTED BY LEADING HEALTHCARE FACILITIES</p><br>
     <div class="foot">
-        <div class="ficons" style="margin-right: 50px;"><i class="fa-solid fa-star-of-life"></i> CityGeneral</div>
-        <div class="ficons" style="margin-right: 50px;"><i class="fa-sharp fa-solid fa-heart-pulse"></i> HealthCare</div>
-        <div class="ficons" style="margin-right: 50px;"><i class="fa-solid fa-prescription-bottle"></i> KinderMed</div>
-        <div class="ficons"><i class="fa-solid fa-brain"></i> NeuroLink</div>
+
+      <div class="ficons" style="margin-right: 50px;"><i class="fa-solid fa-star-of-life"></i> CityGeneral</div>
+      <div class="ficons"style="margin-right: 50px;"><i class="fa-sharp fa-solid fa-heart-pulse"></i> HealthCare</div>
+      <div class="ficons"style="margin-right: 50px;"><i class="fa-solid fa-prescription-bottle"></i> KinderMed</div>
+      <div class="ficons"><i class="fa-solid fa-brain"></i> NeuroLink</div>
+      <!-- 191 191 191 -->
     </div>
-</footer>
+  </footer>
+  <script>
+const progress = document.getElementById("prg");
+let value = 0;
+const target = 80;
 
-<script>
-    class Patient {
-        constructor(name, age, department) {
-            this.name = name;
-            this.age = age;
-            this.department = department;
-        }
+const interval = setInterval(() => {
+  if (value >= target) {
+    clearInterval(interval);
+  } else {
+    value++;
+    progress.value = value;
+  }
+}, 15);
+
+// alerts for buttons
+const btn1 = document.getElementById("btn1");
+
+btn1.onclick = function() {
+  if (btn1.innerText === "Start Free Trial") {
+    alert("Free Trial Started!");
+    btn1.innerText = "Stop Free Trial";
+  } 
+  else {
+    const confirmStop = confirm("Are you sure you want to stop the free trial?");
+    
+    if (confirmStop) {
+      alert("Free Trial Stopped!");
+      btn1.innerText = "Start Free Trial";
     }
+  }
+};
+document.getElementById("btn2").onclick = function() {
+  alert("Features Page Coming Soon!");
+};
 
-    // ✅ Array to store patients
-    const patients = [];
+setInterval(function() {
+const beds = 22 + Math.floor(Math.random() * 5); // 22–26 beds
+  document.getElementById("bedsText").innerText =
+    beds + " beds available • Updated just now";
+}, 3000);
 
-    function registerPatient() {
-        const name = document.getElementById("pName").value.trim();
-        const age = document.getElementById("pAge").value;
-        const dept = document.getElementById("pDept").value;
-
-        if (!name || !age || !dept) {
-            alert("Please fill all fields!");
-            return;
-        }
-
-        // ✅ Create object using class
-        const patient = new Patient(name, Number(age), dept);
-
-        // ✅ Store in array
-        patients.push(patient);
-
-        displayPatients();
-
-        alert("Patient registered successfully!");
-
-        document.getElementById("pName").value = "";
-        document.getElementById("pAge").value = "";
-        document.getElementById("pDept").value = "";
-    }
-
-    function displayPatients() {
-        const list = document.getElementById("patientList");
-        list.innerHTML = "";
-
-        patients.forEach((p, index) => {
-            const div = document.createElement("div");
-            div.style.background = "white";
-            div.style.padding = "8px 10px";
-            div.style.marginBottom = "6px";
-            div.style.borderRadius = "6px";
-            div.style.border = "1px solid #ddd";
-
-            div.innerHTML = `<b>${index + 1}. ${p.name}</b> | Age: ${p.age} | Department: ${p.department}`;
-            list.appendChild(div);
-        });
-    }
 </script>
 
 </body>
