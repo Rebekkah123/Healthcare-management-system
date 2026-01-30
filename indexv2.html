@@ -22,7 +22,7 @@
         <li><a href="#solutions">Solutions</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#support">Support</a></li>
-        <li><a href="#login" style="background-color: lightgrey; border-radius: 10px;"><b>Log In</b></a></li>
+        <li><a href="login.html" style="background-color: lightgrey; border-radius: 10px;"><b>Log In</b></a></li>
         <li><a href="#requestdemo" style="background-color: rgb(66, 98, 225); border-radius: 10px; color: white;">Request Demo</a></li>
         </ul>
 
@@ -39,8 +39,8 @@ records, and resource allocation. Built for modern<br>
 healthcare providers who value efficiency.</p>
   <div class="buttons">
 
-    <button style="background-color: rgb(66, 98, 225); color: white;">Start Free Trial</button>
-    <button style="background-color: white;">View Features</button>
+    <button id="btn1"style="background-color: rgb(66, 98, 225); color: white;">Start Free Trial</button>
+    <button id="btn2"style="background-color: white;">View Features</button>
   </div>
   <div style="padding-top: 14px; color: rgb(83, 81, 81); font-size: small;">
     <i class="fa-regular fa-circle-check" style="color: #20e741;"></i> HIPAA Compliant
@@ -57,7 +57,7 @@ healthcare providers who value efficiency.</p>
     <b style="border-radius: 6px; font-size: 12px; border-style: hidden; background-color: #20e741; color:darkgreen; height: 5px; width: 45px; padding: 2px;">Optimal</b><br>
 
      <progress id="prg" value="80" max="100"  style="width: 90%;"></progress><br>
-     <span style="font-size: x-small; color: rgb(83, 81, 81);">24 beds available: Updated 2 mins ago</span>
+     <span id="bedsText"style="font-size: x-small; color: rgb(83, 81, 81);">24 beds available: Updated 2 mins ago</span>
   </div>
  
    </div>
@@ -76,5 +76,48 @@ healthcare providers who value efficiency.</p>
       <!-- 191 191 191 -->
     </div>
   </footer>
+  <script>
+const progress = document.getElementById("prg");
+let value = 0;
+const target = 80;
+
+const interval = setInterval(() => {
+  if (value >= target) {
+    clearInterval(interval);
+  } else {
+    value++;
+    progress.value = value;
+  }
+}, 15);
+
+// alerts for buttons
+const btn1 = document.getElementById("btn1");
+
+btn1.onclick = function() {
+  if (btn1.innerText === "Start Free Trial") {
+    alert("Free Trial Started!");
+    btn1.innerText = "Stop Free Trial";
+  } 
+  else {
+    const confirmStop = confirm("Are you sure you want to stop the free trial?");
+    
+    if (confirmStop) {
+      alert("Free Trial Stopped!");
+      btn1.innerText = "Start Free Trial";
+    }
+  }
+};
+document.getElementById("btn2").onclick = function() {
+  alert("Features Page Coming Soon!");
+};
+
+setInterval(function() {
+const beds = 22 + Math.floor(Math.random() * 5); // 22–26 beds
+  document.getElementById("bedsText").innerText =
+    beds + " beds available • Updated just now";
+}, 3000);
+
+</script>
+
 </body>
 </html>
